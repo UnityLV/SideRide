@@ -7,15 +7,16 @@ public class TrailEffect : MonoBehaviour
     [SerializeField] private float _scaler;
     private ParticleSystem.VelocityOverLifetimeModule _velocityModule;
 
+
     private void Start()
     {
         _velocityModule = _particleSystem.velocityOverLifetime;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        float verticalVelocity = _rigidbody2D.velocity.y;
+        float  targetVelocity = _rigidbody2D.velocity.y * _scaler;
 
-        _velocityModule.yMultiplier = verticalVelocity * _scaler;
+        _velocityModule.yMultiplier =targetVelocity;
     }
 }
