@@ -8,6 +8,7 @@ public class GameStarter : MonoBehaviour
     public void StartGame()
     {
         IsGameStarted = true;
+        gameObject.SetActive(true);
         Debug.Log("Game started");
     }
 }
