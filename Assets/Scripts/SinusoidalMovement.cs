@@ -1,6 +1,10 @@
 ﻿using Unity.VisualScripting;
 using UnityEngine;
 
+
+
+
+
 public class SinusoidalMovement : MonoBehaviour
 {
     [SerializeField] private float _amplitude = 1f;
