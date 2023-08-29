@@ -20,7 +20,7 @@ public class UserInput : MonoBehaviour
 
     private bool IsInputDetected()
     {
-        return Input.GetKeyDown(InteractedKey) || IsAnyMouseButtonPressed();
+        return Input.GetKey(InteractedKey) || IsAnyMouseButtonPressed();
     }
 
     private bool IsAnyMouseButtonPressed()
