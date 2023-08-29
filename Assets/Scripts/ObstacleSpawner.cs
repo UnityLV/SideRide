@@ -11,7 +11,7 @@ public class ObstacleSpawner : BaseSpawner
 
     private void Start()
     {
-        InvokeRepeating(nameof(CreateObstacles), 0, _spawnInterval);
+        InvokeRepeating(nameof(CreateObstacles), 1, _spawnInterval);
         InvokeRepeating(nameof(IncreaseCount), _increaseInterval, _increaseInterval);
     }
 
