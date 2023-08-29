@@ -1,4 +1,5 @@
 # SideRide
 
-https://i.imgur.com/TbeppmM.gif
 
+
+![hippo](https://i.imgur.com/TbeppmM.gif)
